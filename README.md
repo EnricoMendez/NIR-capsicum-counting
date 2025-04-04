@@ -17,6 +17,7 @@ The project aims to provide an end-to-end solution for counting fruits in RGB an
 ├── customized_tracker.yaml    # Custom tracking parameters for detections
 ├── Models/
 │   ├── v14_yolo11n.pt         # Trained YOLO11 model with NIR dataset
+│   ├── color_n.pt             # Trained YOLO11 model with RGB dataset
 ├── Input videos/
 │   ├── color.mp4              # RGB input video
 │   └── nir.mp4                # NIR input video
@@ -67,13 +68,13 @@ jupyter notebook Train_yolo11.ipynb
 
 ## 🧪 Sample Data
 
-Example videos (`color.mp4`, `nir.mp4`) are included in the `Input videos/` folder to test the pipeline with different spectrum inputs.
+The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to test the pipeline with different spectrum inputs.
 
 ---
 
 ## 🧠 Model
 
-The model used is a YOLO11 (nano variant) trained on a custom fruit dataset. The weights file is `v14_yolo11n.pt` is a YOLO11 nano model trained with NIR capsicum images.
+The model used is a YOLO11 (nano variant) trained on a custom fruit dataset. The weights file `v14_yolo11n.pt` is a YOLO11 nano model trained with NIR capsicum images, and `color_n.pt` is a YOLO11 nano model trained with RGB images.
 
 ---
 
