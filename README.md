@@ -21,7 +21,7 @@ The project aims to provide an end-to-end solution for counting fruits in RGB an
 ├── Input videos/
 │   ├── color.mp4              # RGB input video
 │   └── nir.mp4                # NIR input video
-├── requirements.txt           # Python dependencies (corrected name)
+├── requirements.txt           # Python dependencies
 ```
 
 ---
