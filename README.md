@@ -2,13 +2,13 @@
 
 This repository contains a complete pipeline for capsicum detection and counting using YOLO11. It includes training scripts, custom object-tracking configurations, and video input processing for tracker testing.
 
-## 📌 Overview
+## Overview
 
 The project aims to provide an end-to-end solution for counting fruits in RGB and NIR video sequences using a custom-trained YOLOv5 model. It supports object tracking and detection on video frames and provides sample input data for testing.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── Train_yolo11.ipynb         # Notebook for training the YOLOv5 model
@@ -26,7 +26,7 @@ The project aims to provide an end-to-end solution for counting fruits in RGB an
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone the repository
 ```bash
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Run detection and counting
 ```bash
@@ -72,19 +72,14 @@ The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to 
 
 ---
 
-## 🧠 Model
+## Models
 
 The model used is a YOLO11 (nano variant) trained on a custom fruit dataset. The weights file `v14_yolo11n.pt` is a YOLO11 nano model trained with NIR capsicum images, and `color_n.pt` is a YOLO11 nano model trained with RGB images.
 
 ---
 
-## ✍️ Authors
+## Author
 
-Developed by **Enrico Mendez**, Mechatronics Engineer as part of his MSc thesis at Tecnológico de Monterrey. 
+Developed by **Enrico Mendez**, Mechatronics Engineer, as part of his MSc thesis at Tecnológico de Monterrey. 
 
----
-
-## 📚 References
-
-Please include relevant academic papers or dataset citations here if used.
 
