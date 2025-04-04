@@ -66,7 +66,7 @@ jupyter notebook Train_yolo11.ipynb
 
 ---
 
-## 🧪 Sample Data
+## Sample Data
 
 The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to test the pipeline with different spectrum inputs.
 
