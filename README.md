@@ -68,7 +68,7 @@ jupyter notebook Train_yolo11.ipynb
 
 ## Sample Data
 
-The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to test the pipeline with different spectrum inputs.
+The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to test the pipeline with different spectrum inputs. Additional videos collected can be found in https://tecmx.sharepoint.com/:f:/r/sites/AiRLabArtificialIntelligenceandRoboticsLaboratory-MaestraEnrico/Shared%20Documents/2025%20Maestr%C3%ADa%20Enrico/NIR%20counting%20capsicums?csf=1&web=1&e=3egYrJ .
 
 ---
 
