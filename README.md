@@ -44,11 +44,10 @@ If conda is not installed yet, you can install conda following the instructions 
 ```bash
 pip install -r requirements.txt
 ```
+>>>Note: If using GPU acceleration, make sure PyTorch is installed with CUDA support:
 
-Note: If using GPU acceleration, make sure PyTorch is installed with CUDA support.
-
+### Using GPU accelaration (Only if Nvidia GPU available)
 Install cuda from download page:  [CUDA Toolkit 11.7 Downloads](https://developer.nvidia.com/cuda-11-7-0-download-archive).
-
 Or install other version from here: [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive).
 
 Then install a PyTorch version compatible with the installed cuda from the installation page: [PyTorch installation page](https://pytorch.org).
