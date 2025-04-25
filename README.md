@@ -45,7 +45,14 @@ conda activate fruit-env
 pip install -r requirements.txt
 ```
 
-> Note: If using GPU acceleration, make sure PyTorch is installed with CUDA support.
+Note: If using GPU acceleration, make sure PyTorch is installed with CUDA support.
+
+Install cuda from download page:  [CUDA Toolkit 11.7 Downloads](https://developer.nvidia.com/cuda-11-7-0-download-archive).
+
+Or install other version from here: [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive).
+
+Then install a torch version compatible with the installed cuda from the installation page: [torch installation page](https://pytorch.org).
+
 
 ---
 
@@ -68,7 +75,7 @@ jupyter notebook Train_yolo11.ipynb
 
 ## Sample Data
 
-The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to test the pipeline with different spectrum inputs. Additional videos collected can be found in https://tecmx.sharepoint.com/:f:/r/sites/AiRLabArtificialIntelligenceandRoboticsLaboratory-MaestraEnrico/Shared%20Documents/2025%20Maestr%C3%ADa%20Enrico/NIR%20counting%20capsicums?csf=1&web=1&e=3egYrJ .
+The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to test the pipeline with different spectrum inputs. Additional videos collected can be found in this [link](https://tecmx.sharepoint.com/:f:/r/sites/AiRLabArtificialIntelligenceandRoboticsLaboratory-MaestraEnrico/Shared%20Documents/2025%20Maestr%C3%ADa%20Enrico/NIR%20counting%20capsicums?csf=1&web=1&e=3egYrJ).
 
 ---
 
