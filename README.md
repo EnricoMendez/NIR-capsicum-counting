@@ -34,12 +34,12 @@ git clone https://github.com/EnricoMendez/NIR-capsicum-counting.git
 cd NIR-capsicum-counting
 ```
 
-### 2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment (Optional but recommended)
 ```bash
 conda create -n fruit-env python=3.11.11
 conda activate fruit-env
 ```
-
+If conda is not installed yet, you can install conda following the instructions from [conda installation instructions](https://www.anaconda.com/docs/getting-started/miniconda/install#aws-graviton2-arm-64)depending on the environment you are using.
 ### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
