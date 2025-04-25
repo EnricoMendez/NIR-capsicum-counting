@@ -51,7 +51,7 @@ Install cuda from download page:  [CUDA Toolkit 11.7 Downloads](https://develope
 
 Or install other version from here: [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive).
 
-Then install a torch version compatible with the installed cuda from the installation page: [torch installation page](https://pytorch.org).
+Then install a PyTorch version compatible with the installed cuda from the installation page: [PyTorch installation page](https://pytorch.org).
 
 
 ---
