@@ -78,7 +78,22 @@ jupyter notebook Train_yolo11.ipynb
 The ' Input videos/' folder includes example videos (`color.mp4`, `nir.mp4`) to test the pipeline with different spectrum inputs. Additional videos collected can be found in this [link](https://tecmx.sharepoint.com/:f:/r/sites/AiRLabArtificialIntelligenceandRoboticsLaboratory-MaestraEnrico/Shared%20Documents/2025%20Maestr%C3%ADa%20Enrico/NIR%20counting%20capsicums?csf=1&web=1&e=3egYrJ).
 
 ---
+## Record new data 
+`video_recording.py` script contains the needed code to record video stream from both RGB and NIR sensors. To run this code first make sure to conect the Oak-D Pro camera to the computer via usb to a usb3 port. Once the camera is plugged you can now run the code with:
 
+```bash
+python video_recording.py
+```
+
+As the code strats running the video will start recording, finally when you are done recording, terminate the program with `ctrl+c`and the video will stop recording and video files will be stored with the names:
+
+```
+rgb_video{i}.mp4      For RGB sensor videos
+mono_video{i}.mp4     For NIR sensor videos
+```
+The `i` counter will be assignated automatically based on the already existing videos in the current folder beging from 1.  
+
+---
 ## Models
 
 The model used is a YOLO11 (nano variant) trained on a custom fruit dataset. The weights file `v14_yolo11n.pt` is a YOLO11 nano model trained with NIR capsicum images, and `color_n.pt` is a YOLO11 nano model trained with RGB images.
