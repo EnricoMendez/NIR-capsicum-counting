@@ -7,4 +7,4 @@ roboflow
 # torchaudio==2.2.1+cu121 --index-url https://download.pytorch.org/whl/cu121
 # torchvision==0.18.1+cu121 --find-links https://download.pytorch.org/whl/torch_stable.html
 opencv-python
-depthai
+depthai>=2,<3

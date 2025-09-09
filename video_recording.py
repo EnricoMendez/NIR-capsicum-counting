@@ -22,24 +22,24 @@ def get_next_filename(base_name, extension):
 pipeline = dai.Pipeline()
 
 # Configuration for the color camera
-cam_rgb = pipeline.createColorCamera()
+cam_rgb = pipeline.create(dai.node.ColorCamera)
 cam_rgb.setBoardSocket(dai.CameraBoardSocket.CAM_A)
 cam_rgb.setResolution(dai.ColorCameraProperties.SensorResolution.THE_1080_P)
 cam_rgb.setColorOrder(dai.ColorCameraProperties.ColorOrder.BGR)
 cam_rgb.setInterleaved(False)
 
 # Configuration for the mono (grayscale) camera
-mono_left = pipeline.createMonoCamera()
+mono_left = pipeline.create(dai.node.MonoCamera)
 mono_left.setResolution(dai.MonoCameraProperties.SensorResolution.THE_720_P)
 mono_left.setBoardSocket(dai.CameraBoardSocket.CAM_B)
 
 # XLinkOut node to send color camera frames to the host
-xout_rgb = pipeline.createXLinkOut()
+xout_rgb = pipeline.create(dai.node.XLinkOut)
 xout_rgb.setStreamName("video_rgb")
 cam_rgb.video.link(xout_rgb.input)
 
 # XLinkOut node to send mono camera frames to the host
-xout_mono = pipeline.createXLinkOut()
+xout_mono = pipeline.create(dai.node.XLinkOut)
 xout_mono.setStreamName("video_mono")
 mono_left.out.link(xout_mono.input)
 
